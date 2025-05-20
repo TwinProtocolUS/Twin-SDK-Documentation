@@ -2,7 +2,20 @@
 
 Prior to using any of the functionalities of the twin protocol package, it is necessary to install it, and then initialize in any file where its use case lies.
 
+Depending on the instance your currently using (development/staging/production), install the package pointing to it:
+
 ```bash
+#(development instance)
+$ npm install twin-protocol-dev
+```
+
+```bash
+#(staging instance)
+$ npm install twin-protocol-staging
+```
+
+```bash
+#(production instance)
 $ npm install twin-protocol-prod
 ```
 
@@ -23,7 +36,8 @@ TP_WS_URL=
 Steps to initialize the SDK:
 
 ```javascript
-import TwinProtocol from "twin-protocol-prod";
+//depending on the instance in use (development, staging, production), make changes accordingly (ie, dev/staging/prod as the suffix for package name)
+import TwinProtocol from "twin-protocol-dev/staging/prod";
 
 const twinProtocol = new TwinProtocol({
   TP_ACCESS_KEY: "your-access-key",
