@@ -39,8 +39,9 @@ The stitch parameter is optional and defaults to false. If set to true, the anim
   success: true,
   message: 'Video generation completed',
   data: {
-    videoUrl: '',
-    duration: 'time in secs'
+    videoUrl: '',   
+    duration: 'time in secs',
+    llmResponse: ''
   }
 }
 ```
