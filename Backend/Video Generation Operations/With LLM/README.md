@@ -24,7 +24,7 @@ As opposed to the non-LLM video generation(refer to Video Generation Operations/
 ## Chatting With Persona LLM:
 In order to make use of our in-house Persona LLM, its necessary to create a chat(Q and A) in our backend. For such a session to be made, 3 parameters are necessary : 
 
-A. userId: This is the unique id assigned to each user by Persona. To create your own, refer to Personality Operations/User Operations/Create New User
+A. userId: This is the unique id assigned to each user by Persona. To create your own, refer to Personality Operations/User Operations/Create New User. To use an existing userId, refer to Personality Operations/Personality Manipulation Functions/Get Persona User Id By Email.
 
 B. personalityId: This is the unique id assigned to each personality(the digital twin in question). To create and train your own, refer to Personality Operations/Personality Manipulation Functions/Create Personality. To use an existing personality, refer to Personality Operations/Personality Manipulation Functions/Get Personality Id By Twin Id.
 
