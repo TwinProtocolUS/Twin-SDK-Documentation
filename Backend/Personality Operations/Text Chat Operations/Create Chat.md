@@ -11,9 +11,9 @@ const main = async () => {
     const message = "Hello!";
     const userId = "user_456";
     const personalityId = "personality_789";
-    const wordLimit = 100;
-    const modelName = "gpt-4";
-    const language = "en";
+    const wordLimit = 100; //optional (set to 50 by default)
+    const modelName = "gpt-4"; //optional (set to gpt-4 by default)
+    const language = "en";  //optional (set to english by default)
     
     const resp = await twinProtocol.createChat(
       sessionId,
