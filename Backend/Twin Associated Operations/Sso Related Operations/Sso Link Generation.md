@@ -11,8 +11,6 @@ const main = async () => {
       email: "", // email of the user present in Twin Platform DB
       redirectPath: "" // optional (to specify a particular route/path appended at the end of the sso url)
     }
-    let email = 
-    let redirectPath = 
     const resp = await twinProtocol.generateSsoLink({email: payload.email, redirectPath: payload.redirectPath});
     console.log(resp);
   } catch (error) {
