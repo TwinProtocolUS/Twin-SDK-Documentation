@@ -31,3 +31,10 @@ main();
   }
 }
 ```
+
+## Note
+Important Step:
+
+To use the SSO link on the Twin front-end staging environment, you need to switch to your designated client instance. This is a one-time setup, as the selected client will be saved in local storage. Please note that the SSO link may not function properly in incognito mode.
+
+For the production environment, once your white-label client is live, no additional configuration will be required. Everything will work smoothly for users without any extra steps.
