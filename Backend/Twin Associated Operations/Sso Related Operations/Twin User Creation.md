@@ -11,7 +11,7 @@ const main = async () => {
       email: "", // email for which a DB entry record is to be made,
       password: "" // optional (by default, Twin Platform Generates a random password string)
     }
-    const resp = await twinProtocol.createUser({email : payload.email, password: payload.password});
+    const resp = await twinProtocol.createUser(payload);
     console.log(resp);
   } catch (error) {
     console.error(error.message);

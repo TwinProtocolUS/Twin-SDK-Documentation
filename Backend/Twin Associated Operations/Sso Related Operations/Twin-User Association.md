@@ -11,7 +11,7 @@ const main = async () => {
       email: "", // email of the user whose mapping is to be done against a twin
       twinId: ""
     }
-    const resp = await twinProtocol.associateTwinToUser({email: payload.email, twinId: payload.twinId});
+    const resp = await twinProtocol.associateTwinToUser(payload);
     console.log(resp);
   } catch (error) {
     console.error(error.message);
