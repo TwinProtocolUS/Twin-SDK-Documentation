@@ -253,3 +253,24 @@ const main = async () => {
 
 main();
 ```
+
+## Ping Stream:
+
+This functionality is used to bypass the inactivity timeout limit by pinging the stream with a silent, empty message, thereby keeping the connection alive. 
+
+```javascript
+const main = async () => {
+  try {
+    let payload = {
+      streamId: "", // as being used in startStream
+      sessionId: "", // as being used in startStream
+      twinId: ""
+    }
+    const resp = await twinProtocol.pingStream(payload);
+    console.log(resp);
+  } catch (error) {
+    console.error(error.message);
+  }
+};
+
+main();
