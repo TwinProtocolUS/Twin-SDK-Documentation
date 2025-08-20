@@ -34,7 +34,8 @@ The stitch parameter is optional and defaults to false. If set to true, the anim
   message: 'Video generation completed',
   data: {
     videoUrl: '',
-    duration: 'time in secs'
+    duration: 'time in secs',
+    video_id: ''
   }
 }
 ```

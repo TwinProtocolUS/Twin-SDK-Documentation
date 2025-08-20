@@ -1,6 +1,6 @@
 # Twin User Creation
 
-This document provides a guide on how to map a User to a specific Twin, thus making it the user's default twin, or in other words, making the specified user the 'owner' of that Twin.
+This document provides a guide on how to map a User to a specific Twin, thus making it the user's default twin.
 
 ## After installing and initializing the package:
 

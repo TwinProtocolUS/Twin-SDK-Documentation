@@ -12,7 +12,7 @@ This guide will walk you through the process of setting up a **real-time streami
 Prior to any implementation, it is necessary to initiate the package:
 
 ```javascript
-import TwinProtocol from "twin-protocol-prod";
+import TwinProtocol from "twin-protocol-dev/staging/prod"; //depending on the env in use
 import dotenv from "dotenv";
 dotenv.config();
 
@@ -21,7 +21,7 @@ class SampleClass {
     this.twinProtocol = new TwinProtocol({
       TP_ACCESS_KEY: process.env.TP_ACCESS_KEY,
       TP_SECRET_KEY: process.env.TP_SECRET_KEY,
-      TP_CLIENT_ID: process.env.TP_CLIENT_ID,
+      TP_CLIENT_API_KEY: process.env.TP_CLIENT_API_KEY,
       TP_BASE_URL: process.env.TP_BASE_URL,
       TP_WS_URL: process.env.TP_WS_URL,
     });
@@ -44,13 +44,13 @@ The first step is to initialize a **new stream session** for a Twin.
 ```json
 {
   "twinId": "your_twin_id",
-  "responseResolution": your_resolution in integer
+  "responseResolution": "your_resolution in integer"
 }
 ```
 
 ### Response Example:
 
-```json
+```javascript
 {
   "id": "your_stream_id",
   "offer": {
@@ -131,7 +131,7 @@ To ensure a smooth WebRTC connection, the **client must send ICE candidates** to
   "sessionId": "your_session_id",
   "candidate": "candidate_string",
   "sdpMid": "sdp_mid",
-  "sdpMLineIndex": integer
+  "sdpMLineIndex": "integer"
 }
 ```
 
