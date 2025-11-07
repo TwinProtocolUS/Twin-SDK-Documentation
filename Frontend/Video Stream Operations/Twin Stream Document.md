@@ -22,7 +22,7 @@ npm install axios
 
 ### API Endpoints
 
-The API is hosted at: `https://temp-stream-production.up.railway.app`
+The API is hosted at: `your-domain-url`
 
 ### Core Functionality
 
@@ -42,7 +42,7 @@ Create a function to set up the initial connection with the server:
 ```typescript
 import axios from "axios";
 
-const API_URL = "https://temp-stream-production.up.railway.app";
+const API_URL = 'your-domain-url';
 
 interface StreamData {
   id: string;
